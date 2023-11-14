@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <!--Exercicio 1-->
+    <h2>1.Crie duas variáveis com o valor 10 e 100. Mostre o valor da soma, subtração, divisão e multiplicação em um ALERT.</h2>
+    <button onclick="Calc10e100()">Calcular 10 e 100</button>
+
+    <!--Exercicio 2-->
+    <h2>2.Crie um loop que mostre na tela o valor de 10 a 100.</h2>
+    <button onclick="loop10a100()">Contagem de 0 a 100</button>
+    <!--Exercicio 3-->
+    <h2>3.Crie uma variável que recebe o valor fixo 5. Mostre a tabuada desse número.</h2>
+    <button onclick="tabuada5()">Tabuada 5</button>
+    <!--Exercicio 4-->
+    <h2>4.Adapte o exercício anterior para o valor não ser mais fixo. O valor deve ser recebido de um campo da tela.</h2>
+    <label for="numEx4">Número</label>
+    <input type="number" id="numEx4">
+    <button onclick="tabuadaex4()">Tabuada</button>
+    <!--Exercicio 5-->
+    <h2>5.Calculadora</h2>
+    <label for="num1">Número 1</label>
+    <input type="number" id="num1">
+
+    <label for="num2">Número 2</label>
+    <input type="number" id="num2">
+
+    <label for="operacao">Operação</label>
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <button onclick="calculo()">Calcular</button>
+
+    <label for="resultado">Resultado</label>
+    <input type="number" id="resultado" readonly>
+    <!--Exercicio 6-->
+    <h2>6.Percorra o array [1,2,3,4,5,6,7,8,9,10] e exiba apenas os valores pares.</h2>
+    <button onclick="NumerosPares()">Exibir números pares</button>
+    <!--Exercicio 7-->
+    <h2>7.O custo de um carro novo ao consumidor é obtido com a seguinte fórmula:</h2>
+    <label for="custoFabrica">Custo de Fabrica</label>
+    <input type="number" id="custoFabrica">
+
+    <label for="percDistribuidor">Percentual de distribuidor</label>
+    <input type="number" id="percDistribuidor">
+
+    <label for="percImpostos">Percentual de impostos</label>
+    <input type="number" id="percImpostos">
+
+    <button onclick="calcValorCarro()">Calcular valor do carro</button>
+
+    <label for="valorFinal">Resultado</label>
+    <input type="number" id="valorFinal" readonly>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
